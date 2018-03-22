@@ -1,0 +1,16 @@
+// Implementation of the example described in chapter 2
+// of the Jason's manual
+
+MAS mars {
+
+    infrastructure: Centralised
+
+    environment: QueensEnv
+    
+    agents: 
+        white checker.asl [beliefs="playAs(0), is(first)"];        
+		
+		black checker.asl [beliefs="playAs(1)"];        
+		
+		configurer checker.asl;                              
+}
